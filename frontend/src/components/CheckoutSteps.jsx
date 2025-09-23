@@ -1,49 +1,35 @@
 import React from 'react';
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
   return (
-    <Nav className='justify-content-center mb-4'>
+    <Nav className="justify-content-center mb-4 checkout-steps">
       <Nav.Item>
-        {step1 ? (
-          <Nav.Link as={Link} to='/login'>
-            Sign In
-          </Nav.Link>
-        ) : (
-          <Nav.Link disabled>Sign In</Nav.Link>
-        )}
+        <Nav.Link disabled={!step1} className={step1 ? 'active-step' : ''}>Sign In</Nav.Link>
       </Nav.Item>
-
       <Nav.Item>
-        {step2 ? (
-          <Nav.Link as={Link} to='/shipping'>
-            Shipping
-          </Nav.Link>
-        ) : (
-          <Nav.Link disabled>Shipping</Nav.Link>
-        )}
+        <Nav.Link disabled={!step2} className={step2 ? 'active-step' : ''}>Shipping</Nav.Link>
       </Nav.Item>
-
       <Nav.Item>
-        {step3 ? (
-          <Nav.Link as={Link} to='/payment'>
-            Payment
-          </Nav.Link>
-        ) : (
-          <Nav.Link disabled>Payment</Nav.Link>
-        )}
+        <Nav.Link disabled={!step3} className={step3 ? 'active-step' : ''}>Payment</Nav.Link>
       </Nav.Item>
-
       <Nav.Item>
-        {step4 ? (
-          <Nav.Link as={Link} to='/placeorder'>
-            Place Order
-          </Nav.Link>
-        ) : (
-          <Nav.Link disabled>Place Order</Nav.Link>
-        )}
+        <Nav.Link disabled={!step4} className={step4 ? 'active-step' : ''}>Place Order</Nav.Link>
       </Nav.Item>
+      <style>{`
+        .checkout-steps .nav-link {
+          border-radius: 50px;
+          margin: 0 8px;
+          background: #f6f9fc;
+          color: #2c5364;
+          font-weight: 500;
+        }
+        .checkout-steps .active-step {
+          background: #2c5364;
+          color: #fff !important;
+          box-shadow: 0 2px 8px rgba(44,83,100,0.10);
+        }
+      `}</style>
     </Nav>
   );
 };
