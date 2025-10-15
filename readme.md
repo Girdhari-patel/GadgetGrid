@@ -1,12 +1,6 @@
 # ProShop eCommerce Platform (v2)
 
-> eCommerce platform built with the MERN stack & Redux.
-
- 
-
-T 
-
-This is version 2.0 of the app, which uses Redux Toolkit. The first version can be found [here](Link)
+> eCommerce platform built with the MERN stack & Redux , which uses Redux Toolkit. 
 
 ## Features
 
