@@ -2,9 +2,9 @@
 
 > eCommerce platform built with the MERN stack & Redux.
 
-<img src="./frontend/public/images/screens.png">
+ 
 
-This project is part of my [MERN Stack From Scratch. It is a full-featured shopping cart with PayPal & credit/debit payments.
+T 
 
 This is version 2.0 of the app, which uses Redux Toolkit. The first version can be found [here](Link)
 
