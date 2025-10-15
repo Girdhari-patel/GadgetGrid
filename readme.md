@@ -27,7 +27,7 @@ This is version 2.0 of the app, which uses Redux Toolkit. The first version can 
 ## Usage
 
 - Create a MongoDB database and obtain your `MongoDB URI` - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register)
-- Create a PayPal account and obtain your `Client ID` - [PayPal Developer](https://developer.paypal.com/)
+ 
 
 ### Env Variables
 
@@ -38,7 +38,7 @@ NODE_ENV = development
 PORT = 5000
 MONGO_URI = your mongodb uri
 JWT_SECRET = 'abc123'
-PAYPAL_CLIENT_ID = your paypal client id
+ 
 PAGINATION_LIMIT = 8
 ```
 
@@ -89,12 +89,11 @@ Sample User Logins
 admin@email.com (Admin)
 123456
 
-john@email.com (Customer)
+Girdhaip42@email.com (Customer)
 123456
 
-jane@email.com (Customer)
-123456
-```
+ 
+ 
 
 ---
 
