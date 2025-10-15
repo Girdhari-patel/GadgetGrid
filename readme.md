@@ -1,4 +1,4 @@
-# ProShop eCommerce Platform (v2)
+# GadgetGrideCommerce Platform 
 
 > eCommerce platform built with the MERN stack & Redux , which uses Redux Toolkit. 
 
